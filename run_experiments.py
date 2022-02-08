@@ -96,7 +96,7 @@ experiments = [
         dataset=dataset,
         estimator=estimator,
         estimation_function=sklearn.model_selection.cross_val_score,
-        parameters={},
+        parameters={"n_jobs": -1},
         scaler=sklearn.preprocessing.StandardScaler(),
     )
     for estimator in estimators
