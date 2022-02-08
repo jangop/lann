@@ -29,7 +29,7 @@ setup(
     keywords="machine learning",
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    python_requires=">=3.9, <4",
+    python_requires="~=3.9",
     install_requires=[
         "loguru",
         "scikit-learn",
@@ -38,6 +38,7 @@ setup(
         "classicexperiments",
     ],
     extras_require={
+        "eval": ["pylmnn", "gpyopt", "sklearn-lvq", "matplotlib"],
         "dev": ["check-manifest", "black", "pylint"],
         "test": ["coverage", "pytest", "black", "pylint", "pandas"],
     },
