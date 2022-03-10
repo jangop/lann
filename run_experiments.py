@@ -62,7 +62,7 @@ if os.path.exists(OUTDOOR_PATH):
         )
     )
 ADRENAL_PATH = "data/adrenal.txt"
-if os.path.exists(OUTDOOR_PATH):
+if os.path.exists(ADRENAL_PATH):
     datasets.append(
         GenericDataset(
             safe_name="adrenal",
